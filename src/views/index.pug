@@ -1,0 +1,49 @@
+doctype html
+html
+  include includes/header
+  body
+    //  Header menu
+    include includes/menu
+
+    // ======= Hero Section =======
+    section#hero.d-flex.flex-column.justify-content-center.align-items-center
+      .hero-container(data-aos='fade-in')
+        h1 UDOFIA ABASIODIONG
+        p
+          | A 
+          span.typed(data-typed-items='Backend Developer, Open Source Contributor, Freelancer')
+    // End Hero
+    
+    main#main
+      // ======= About Section =======
+      include sections/about
+      
+      // ======= Facts Section =======
+      include sections/facts
+      
+      // ======= Skills Section =======
+      include sections/skills
+      
+      // ======= Resume Section =======
+      include sections/resume
+      
+      // ======= Portfolio Section =======
+      include sections/portfolio
+      
+      // ======= Services Section =======
+      include sections/services
+      
+      // ======= Testimonials Section =======
+      include sections/testimonials
+      
+      // ======= Contact Section =======
+      include sections/contact
+
+    // End #main
+    // ======= Footer =======
+    include includes/footer
+        // back to top
+    a.back-to-top(href='#')
+      i.icofont-simple-up
+    // Vendor JS Files for side menue slider
+    include includes/sideMenu
