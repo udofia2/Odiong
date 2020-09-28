@@ -1,10 +1,11 @@
 {
-  "name": "UPHIA-WEBSITE",
+  "name": "udofia-portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server",
+    "mail": "nodemon mail",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,6 +16,7 @@
     "express": "^4.17.1",
     "mongoose": "^5.10.1",
     "nodemailer": "^6.4.11",
+    "nodemailer-sendgrid": "^1.0.3",
     "nodemon": "^2.0.4",
     "pug": "^3.0.0"
   },

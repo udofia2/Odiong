@@ -108,7 +108,7 @@ jQuery(document).ready(function($) {
     $.ajax({
       type: "POST",
       url: action,
-      data: str,
+      // data: str,
       success: function(msg) {
         if (msg == 'OK') {
           this_form.find('.loading').slideUp();
