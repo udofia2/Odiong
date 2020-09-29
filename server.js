@@ -7,17 +7,19 @@ const { PORT, url, SENDGRID_API_KEY } = require("./src/config/env");
 
 const app = express();
 
-app.all('*', function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', 'URLs to trust of allow');
-  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-  res.header('Access-Control-Allow-Headers', '*');
-  if ('OPTIONS' == req.method) {
-  res.sendStatus(200);
+app.all("*", function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "URLs to trust of allow");
+  res.header(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+  res.header("Access-Control-Allow-Headers", "*");
+  if ("OPTIONS" == req.method) {
+    res.sendStatus(200);
   } else {
     next();
   }
 });
-
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -50,6 +52,14 @@ app.post("/forms", async (req, res) => {
       text: "Hello world?", // plain text body
       html: req.body.message, // html body
     });
+
+    console.log("Message sent: %s", info.messageId);
+    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+
+    // Preview only available when sending through an Ethereal account
+    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+
     res.send("OK");
   } catch (error) {
     console.log(error);
