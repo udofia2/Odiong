@@ -32,8 +32,8 @@ app.get("/", (req, res) => {
   console.log(res.body);
   res.render("index");
 });
-app.get("/portfolio", (req, res) => {
-  res.render("portfolio");
+app.get("/flowexpresscourier", (req, res) => {
+  res.render("projects/flowexpresscourier");
 });
 
 app.post("/forms", async (req, res) => {
