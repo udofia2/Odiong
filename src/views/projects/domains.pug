@@ -1,11 +1,11 @@
 doctype html
 html
-  include includes/header
+  include ../includes/header
     title Portfolio Details
   
   body
     // ======= Header =======
-    include includes/menu
+    include ../includes/menu
     // End Header
     main#main
       // ======= Breadcrumbs =======
@@ -23,9 +23,10 @@ html
         .container
           .portfolio-details-container
             .owl-carousel.portfolio-details-carousel
-              img.img-fluid(src='assets/img/portfolio-details-1.png' alt='')
-              img.img-fluid(src='assets/img/portfolio-details-2.png' alt='')
-              img.img-fluid(src='assets/img/portfolio-details-3.png' alt='')
+              img.img-fluid(src='assets/img/portfolioDetails/showDomain/HomePage.png' alt='')
+              img.img-fluid(src='assets/img/portfolioDetails/showDomain/landingPage.png' alt='')
+              img.img-fluid(src='assets/img/portfolioDetails/showDomain/result.png' alt='')
+              img.img-fluid(src='assets/img/portfolioDetails/showDomain/search_result.png' alt='')
             .portfolio-info
               h3 Project information
               ul
@@ -41,16 +42,16 @@ html
                 li
                   strong Project URL
                   | : 
-                  a(target="_blank" href='https://www.flowexpresscourier.com') flowexpresscourier.com
+                  a(target="_blank" href='showdomains.herokuapp.com/api/domain') domainsearch.com
           .portfolio-description
-            h2 Flowexpresscourier Company
+            h2 Domain Search Engine
             p
               | Flowexpresscourier company is specialized in local and international delivery of products. The company is very competent and experienced in safe delivery of client packages at any specified location with the specified duration. The staff works round the clock to meet with customers request and needs.
       // End Portfolio Details Section
     // End #main
     // ======= Footer =======
-    include includes/footer
+    include ../includes/footer
     a.back-to-top(href='#')
       i.icofont-simple-up
     // Vendor JS Files
-    include includes/sideMenu
+    include ../includes/sideMenu

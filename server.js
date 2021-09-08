@@ -21,8 +21,8 @@ app.all("*", function (req, res, next) {
   }
 });
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 app.set("view engine", "pug");
 app.set("views", "src/views");
@@ -32,8 +32,21 @@ app.get("/", (req, res) => {
   console.log(res.body);
   res.render("index");
 });
+
 app.get("/flowexpresscourier", (req, res) => {
   res.render("projects/flowexpresscourier");
+});
+
+app.get("/searchdomain", (req, res) => {
+  res.render("projects/domains");
+});
+
+app.get("/temadepharm", (req, res) => {
+  res.render("projects/temadepharm");
+});
+
+app.get("/404page", (req, res) => {
+  res.render("projects/404page");
 });
 
 app.post("/forms", async (req, res) => {
