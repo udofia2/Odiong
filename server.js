@@ -41,6 +41,10 @@ app.get("/searchdomain", (req, res) => {
   res.render("projects/domains");
 });
 
+app.get("/workflowlink", (req, res) => {
+  res.render("projects/workflowlink");
+});
+
 app.get("/temadepharm", (req, res) => {
   res.render("projects/temadepharm");
 });

@@ -18,36 +18,11 @@ html
                 a(href='/') Home
               li Portfoio Details
       // End Breadcrumbs
+      
       // ======= Portfolio Details Section =======
-      section#portfolio-details.portfolio-details
-        .container
-          .portfolio-details-container
-            .owl-carousel.portfolio-details-carousel
-              img.img-fluid(src='assets/img/portfolioDetails/temadepharm/landingPage.png' alt='')
-              img.img-fluid(src='assets/img/portfolioDetails/temadepharm/categoryPage.png' alt='')
-              img.img-fluid(src='assets/img/portfolioDetails/temadepharm/singleProductPage.png' alt='')
-              img.img-fluid(src='assets/img/portfolioDetails/temadepharm/checkOutPage.png' alt='')
-            .portfolio-info
-              h3 Project information
-              ul
-                li
-                  strong Category
-                  | : Web design
-                li
-                  strong Client
-                  | : Temadepharm Pharmaceuticals
-                li
-                  strong Project date
-                  | : March,
-                li
-                  strong Project URL
-                  | : 
-                  a(target="_blank" href='https://www.temadepharm.com.ng') https://www.temadepharm.com.ng
-          .portfolio-description
-            h2 Temadepharm pharmacy
-            p
-              | A fully functional e-commerce pharmaceutical drug store. Mobile responsive with shipping functionality. The company specialize in home delivery of prescribed medication. A client simply visit the site and place an order based on the prescription they have been provided. Then it order will be delivered to their homes.
+      include ../project_detail/temadepharm.pug
       // End Portfolio Details Section
+    
     // End #main
     // ======= Footer =======
     include ../includes/footer

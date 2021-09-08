@@ -18,34 +18,11 @@ html
                 a(href='/') Home
               li Portfoio Details
       // End Breadcrumbs
+      
       // ======= Portfolio Details Section =======
-      section#portfolio-details.portfolio-details
-        .container
-          .portfolio-details-container
-            .owl-carousel.portfolio-details-carousel
-              img.img-fluid(src='assets/img/portfolioDetails/404page/404page_desktop.png' alt='404 Page')
-            .portfolio-info
-              h3 Project information
-              ul
-                li
-                  strong Category
-                  | : Web design
-                li
-                  strong Client
-                  | : Courier Express Company
-                li
-                  strong figma Link
-                  | : 
-                  a(href="https://www.figma.com/file/QeKWLNhB13zDjJzqR22TKE/404-page-challenge?node-id=1%3A56") figma.com/404page
-                li
-                  strong Project URL
-                  | : 
-                  a(target="_blank" href='https://www.404page.ufiar.com') 404page.com
-          .portfolio-description
-            h2 404 Error Page
-            p
-              | Mobile responsive 404 error page. This project is interesting because i built the entire website using css grid.And with the css grid, the website is completely mobile responsive as demonstrated in the link above. Mostly this page is attached to a website to direct visitors properly when a wrong url is visited
+      include ../project_detail/404.pug
       // End Portfolio Details Section
+    
     // End #main
     // ======= Footer =======
     include ../includes/footer

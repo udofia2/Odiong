@@ -804,6 +804,10 @@ section {
   color: #fff;
 }
 
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .contactEmoji img {
+  width: 25vw;
+}
+
 .contact .php-email-form {
   width: 100%;
   padding: 30px;
@@ -1070,4 +1074,11 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+
+@media (max-width: 970px) {
+  .contact .info .contactEmoji img {
+  width: 55vw;
+  margin-left: 70px;
+}
 }
