@@ -1,9 +1,9 @@
 - 👋 Hi, I’m @udofia2
 - 👀 I’m interested in Backend Development
-- U+1F468, U+200D, U+1F4BB
+- 👨‍💻 Currently work, using Javascript(Nodejs)
 - 🌱 I’m currently learning Golang
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 💞️ I’m looking to collaborate on opensource projects
+- 📫 How to reach me udofia.herokuapp.com
 
 <!---
 udofia2/udofia2 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
