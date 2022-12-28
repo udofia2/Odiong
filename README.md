@@ -3,7 +3,7 @@
 - 👨‍💻 Currently work, using Javascript(Nodejs)
 - 🌱 I’m currently learning Golang
 - 💞️ I’m looking to collaborate on opensource projects
-- 📫 How to reach me udofia.herokuapp.com
+- 📫 How to reach me odiong.ng
 
 <!---
 udofia2/udofia2 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
